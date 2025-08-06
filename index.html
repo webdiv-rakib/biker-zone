@@ -19,20 +19,39 @@
 
 <body>
     <header class="poppins md:container mx-auto">
-        <div class="flex justify-between pt-10">
-            <div>
-                <a class="text-4xl font-bold">Biker Zone</a>
+        <nav class="pt-5">
+            <div class="navbar bg-base-100 flex justify-between">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <i class="fa-solid fa-bars text-4xl"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-4xl font-bold">Biker Zone</a>
+                </div>
+                <div class="flex gap-6">
+                    <div class="hidden lg:flex">
+                        <ul class="px-1 flex justify-center items-center gap-6 text-base font-medium">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <a class="btn common-bg text-white">Login</a>
+                    </div>
+                </div>
             </div>
-            <div class="flex justify-center items-center gap-6">
-                <ul class="sm:flex gap-6 font-medium sm:block hidden">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-                <a class="btn common-bg text-white text-xl font-bold px-12 py-3">Login</a>
-            </div>
-        </div>
+        </nav>
+        <!-- Banner section -->
         <div class="carousel w-full md:h-[550px] banner-bg mt-12">
             <div id="slide1" class="carousel-item relative w-full">
                 <div class="flex justify-center items-center flex-col md:flex-row gap-6 md:p-[110px] p-3">
