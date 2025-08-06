@@ -17,20 +17,60 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="max-w-screen">
-    <header class="poppins">
-        <div class="flex justify-between pt-10 px-[130px]">
+<body>
+    <header class="poppins md:container mx-auto">
+        <div class="flex justify-between pt-10">
             <div>
                 <a class="text-4xl font-bold">Biker Zone</a>
             </div>
             <div class="flex justify-center items-center gap-6">
-                <ul class="flex gap-6 font-medium">
+                <ul class="sm:flex gap-6 font-medium sm:block hidden">
                     <li><a href="">Home</a></li>
                     <li><a href="">Shop</a></li>
                     <li><a href="">News</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
-                <a class="btn bg-[#E76F51] text-white text-xl font-bold px-12 py-3">Login</a>
+                <a class="btn common-bg text-white text-xl font-bold px-12 py-3">Login</a>
+            </div>
+        </div>
+        <div class="carousel w-full md:h-[550px] banner-bg mt-12">
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class="flex justify-center items-center flex-col md:flex-row gap-6 md:p-[110px]">
+                    <div class="flex-1 md:space-y-7">
+                        <h1 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+                        <p class="font-light">Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button class="btn common-bg md:py-4 md:px-7 md:rounded-lg text-white">Purchase</button>
+                    </div>
+                    <div class="flex-1 flex justify-center">
+                        <img src="images/slider/bike1.png" class="w-[406px] border-2 border-dashed border-[#d4cfce]" />
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
             </div>
         </div>
     </header>
